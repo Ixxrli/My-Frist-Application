@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 第一层：显示当前标签 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:textAlignment="center"
+        android:text="@string/tag_now"/>
+
+    <!-- 第二层：Recyclerview 占比 90% -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90" />
+
+    <!-- 第三层：Linearlayout 包含一个文本和一个按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+
+
+        <!-- 最右边的按钮 -->
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="@string/none" />
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/confirm" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>
