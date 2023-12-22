@@ -17,7 +17,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.jnu.student.Fragment.MyFragment;
-import com.jnu.student.Fragment.WorkListFragment;
+import com.jnu.student.Fragment.RewardFragment;
+import com.jnu.student.Fragment.TaskFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_recycleview);
+        setContentView(R.layout.activity_main);
         ViewPager2 viewPager = findViewById(R.id.view_pager);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         FragmentAdapter pagerAdapter = new FragmentAdapter(getSupportFragmentManager(), getLifecycle());
@@ -48,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
             public Fragment createFragment (int position){
                 switch (position) {
                     case 0:
-                        return new WorkListFragment();
+                        return new TaskFragment();
                     case 1:
-                        return new WebViewFragment();
+                        return new RewardFragment();
                     case 2:
                         return new WebViewFragment();
                     case 3:

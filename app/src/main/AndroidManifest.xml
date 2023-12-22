@@ -28,7 +28,7 @@
             android:value="O34BZ-2XD6N-BPJFG-SV6MO-EUEGK-SBBOS" />
 
         <activity
-            android:name=".WorkItemDetailActivity"
+            android:name=".TaskItemDetailActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
