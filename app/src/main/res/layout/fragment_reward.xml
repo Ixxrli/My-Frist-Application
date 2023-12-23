@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="horizontal">
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/show_task"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+        <!-- 右侧加号按钮 -->
+        <ImageView
+            android:id="@+id/RaddButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            tools:ignore="SpeakableTextPresentCheck"
+            android:id="@+id/Rtab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/Rview_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+
+        <!-- 第一层：显示当前标签 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reward_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/point_sum_text"
+            android:gravity="center_vertical"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="22sp"
+            android:text="   0" />
+
+        <ImageView
+            android:id="@+id/tickImageView"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/confirm" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- 其他内容可以添加到这里 -->
+
+</LinearLayout>

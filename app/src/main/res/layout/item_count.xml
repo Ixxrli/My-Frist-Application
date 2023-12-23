@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="60dp">
 
+
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/reward_item_img"
         android:layout_width="62dp"
         android:layout_height="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -14,13 +16,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.017"
-        app:srcCompat="@drawable/task" />
+        app:srcCompat="@drawable/turnover" />
 
     <TextView
-        android:id="@+id/target_item_title"
+        android:id="@+id/bill_item_title"
         android:layout_width="224dp"
         android:layout_height="19dp"
-        android:text="@string/target_item_title"
+        android:text="@string/reward_item_title"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +32,7 @@
         app:layout_constraintVertical_bias="0.097" />
 
     <TextView
-        android:id="@+id/target_complete_num"
+        android:id="@+id/bill_time"
         android:layout_width="224dp"
         android:layout_height="19dp"
         android:text="@string/target_complete_num"
@@ -39,18 +41,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/target_item_title"
+        app:layout_constraintTop_toTopOf="@+id/bill_item_title"
         app:layout_constraintVertical_bias="0.567" />
 
 
+
     <TextView
-        android:textSize="30sp"
-        android:textColor="#80808FF0"
+        android:textSize="20sp"
+        android:textColor="#FFC0CB"
         android:gravity="center"
-        android:id="@+id/task_num_add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="@string/task_num_add"
+        android:id="@+id/bill_num"
+
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:text="@string/reward_num_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.997"

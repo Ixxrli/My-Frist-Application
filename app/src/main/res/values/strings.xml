@@ -7,7 +7,6 @@
     <string name="todo">TODO</string>
     <string name="Reward">Reward</string>
     <string name="show_task">PlayTask</string>
-    <string name="desc">desc</string>
     <string name="confirm">confirm</string>
     <string name="none">0</string>
     <string name="hello_blank_fragment">hello_blank_fragment</string>
@@ -17,9 +16,18 @@
     <string name="task_num">次数</string>
     <string name="task_label">通过标签对任务进行分类</string>
     <string name="complete">完成</string>
-    <string name="target_item_title">targetitem_title</string>
-    <string name="target_complete_num">target_complete_num</string>
-    <string name="target_sum">target_sum</string>
-    <string name="target_edit">分数</string>
+    <string name="target_item_title">任务名称</string>
+    <string name="target_complete_num">完成次数</string>
+    <string name="task_num_add">+10</string>
     <string name="tag_now">当前标签：全部</string>
+    <string name="help">帮助</string>
+    <string name="remove">清除数据</string>
+    <string name="name">用户名</string>
+    <string name="bill">账单</string>
+    <string name="add_new_reward">新建奖励</string>
+    <string name="reward_point">消耗分数</string>
+    <string name="reward_tag">通过标签对任务进行分类</string>
+    <string name="reward_item_title">奖励名称</string>
+    <string name="reward_num_add">-10</string>
+    <string name="reward_complete_num">完成次数</string>
 </resources>

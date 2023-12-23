@@ -17,8 +17,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.jnu.student.Fragment.MyFragment;
-import com.jnu.student.Fragment.RewardFragment;
-import com.jnu.student.Fragment.TaskFragment;
+import com.jnu.student.Fragment.Reward.RewardFragment;
+import com.jnu.student.Fragment.Task.TaskFragment;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -28,7 +28,10 @@
             android:value="O34BZ-2XD6N-BPJFG-SV6MO-EUEGK-SBBOS" />
 
         <activity
-            android:name=".TaskItemDetailActivity"
+            android:name=".total.TaskItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".total.RewardItemDetailActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

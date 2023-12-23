@@ -5,4 +5,8 @@
         <item>每周任务</item>
         <item>普通任务</item>
     </string-array>
+    <string-array name="reward_types">
+        <item>单次</item>
+        <item>不限</item>
+    </string-array>
 </resources>

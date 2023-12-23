@@ -17,10 +17,10 @@
         app:srcCompat="@drawable/task" />
 
     <TextView
-        android:id="@+id/target_item_title"
+        android:id="@+id/reward_item_title"
         android:layout_width="224dp"
         android:layout_height="19dp"
-        android:text="@string/target_item_title"
+        android:text="@string/reward_item_title"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,16 +30,16 @@
         app:layout_constraintVertical_bias="0.097" />
 
     <TextView
-        android:id="@+id/target_complete_num"
+        android:id="@+id/reward_complete_num"
         android:layout_width="224dp"
         android:layout_height="19dp"
-        android:text="@string/target_complete_num"
+        android:text="@string/reward_complete_num"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/target_item_title"
+        app:layout_constraintTop_toTopOf="@+id/reward_item_title"
         app:layout_constraintVertical_bias="0.567" />
 
 
@@ -47,10 +47,10 @@
         android:textSize="30sp"
         android:textColor="#80808FF0"
         android:gravity="center"
-        android:id="@+id/task_num_add"
+        android:id="@+id/reward_num_add"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="@string/task_num_add"
+        android:text="@string/reward_num_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.997"

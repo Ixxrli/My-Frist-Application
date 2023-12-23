@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="horizontal">
+
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/goBackButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_new_reward"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+        <!-- 第一层 -->
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/reward_item_title"
+            android:inputType="text" />
+
+
+    <!-- 第二层 -->
+    <EditText
+        android:id="@+id/editPoints"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/reward_point"
+        android:inputType="number" />
+
+    <!-- 第三层 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editPoint"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/task_num"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinnerRewardType"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:entries="@array/reward_types" />
+    </LinearLayout>
+
+    <!-- 第四层 -->
+    <EditText
+        android:id="@+id/editTag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/reward_tag"
+        android:inputType="text" />
+
+    <!-- 第五层 -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/complete" />
+
+
+    <!-- 其他内容可以添加到这里 -->
+
+</LinearLayout>
